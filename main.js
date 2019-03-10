@@ -39,6 +39,10 @@ function startGame() {
         timeUp = false;
         score = 0;
         peep();
+        console.log( count );
+        count = 100;
+        clearInterval( counter );
+        setInterval( timer, 100 );
         setTimeout( () => timeUp = true, 10000 );
         setTimeout( () => currentyPlaying = false, 10000 );
     }
@@ -56,17 +60,27 @@ function bonk( e ) {
 moles.forEach( mole => mole.addEventListener( 'click', bonk ) );
 
 // Stopperi loogika
-const countDown = document.getElementById( "timeLeft" );
-var timeleft = 10;
-function startTimer() {
+const timeLeft = document.querySelector( ".timeLeft" );
 
-    countDown.innerHTML = timeleft + " Aega jäänud";
-    timeleft -= 1;
-    if ( timeleft <= 0 ) {
-        clearInterval( downloadTimer );
-        document.getElementById( "countdown" ).innerHTML = "Lõppenud"
+
+let count = 100;
+const initialTime = 100;
+var counter;
+
+function timer() {
+    if ( count <= 0 ) {
+
+        return;
     }
+    count--;
+    displayTime( count );
 }
+
+function displayTime() {
+    let time = count / 10;
+    timeLeft.innerHTML = time.toPrecision( count.toString().length ) + "  sekundit";
+}
+
 
 
 // Edetabeli loogika.
