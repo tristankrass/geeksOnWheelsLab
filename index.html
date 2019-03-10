@@ -14,6 +14,7 @@
         <a class="navbar-brand" href="#">
             <img src="images/põhimutt.svg" alt="Mutt" height="50px" width="50px">
         </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,38 +23,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Mängi <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link text-primary" href="#">Edetabel</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-
             </ul>
         </div>
+
     </nav>
 </header>
 <main>
     <section>
         <!-- Todo: Add a modal with leaderBoard -->
     </section>
-    <section class="jumbotron bg-transparent">
-        <h1>Tere Tulemast!</h1>
-        <h3>Skoor: <span class="gameScore">0</span></h3>
-        <button class="btn btn-primary btn-lg">Start</button>
+    <section>
+        <!-- <progress value="0" max="10" id="progressBar"></progress> -->
+        <div id="countdown"></div>
     </section>
-    <section class="game">
+    <section class="jumbotron bg-transparent">
+        <div class="text-center">
+            <h1>Skoor: <span class="gameScore text-warning">0</span></h1>
+            <h3 class="text-warning">Aega jäänud
+                <span class="timeLeft">10:0</span>
+            </h3>
+            <button id="startGameBtn" class="btn btn-primary btn-lg">Alusta mänguga</button>
+        </div>
+
+    </section>
+    <section class=" game">
         <div class="hole hole1">
             <div class="mole"></div>
         </div>
@@ -87,5 +85,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script>
+    // Kirjutame koodi siia
+
+</script>
 
 </html>
