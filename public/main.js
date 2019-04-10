@@ -75,26 +75,26 @@ function pihtas( e ) {
 }
 const proxyurl = "https://salty-headland-41998.herokuapp.com/";
 
-const baseUrl = 'https://whac-a-mole-677b1.firebaseio.com/usernam';
-( function () {
-    var cors_api_host = proxyurl;
-    var cors_api_url = cors_api_host;
-    var slice = [].slice;
-    var origin = window.location.protocol + '//' + window.location.host;
-    var open = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function () {
-        var args = slice.call( arguments );
-        var targetOrigin = /^https?:\/\/([^\/]+)/i.exec( args[1] );
-        if ( targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
-            targetOrigin[1] !== cors_api_host ) {
-            args[1] = cors_api_url + args[1];
-        }
-        return open.apply( this, args );
-    };
-} )();
-fetch( baseUrl )
-    .then( response => response.text() )
-    .then( contents => console.log( contents ) )
-    .catch( () => console.log( "Can’t access " + baseUrl + " response. Blocked by browser?" ) )
+// const baseUrl = 'https://whac-a-mole-677b1.firebaseio.com/usernam';
+// ( function () {
+//     var cors_api_host = proxyurl;
+//     var cors_api_url = cors_api_host;
+//     var slice = [].slice;
+//     var origin = window.location.protocol + '//' + window.location.host;
+//     var open = XMLHttpRequest.prototype.open;
+//     XMLHttpRequest.prototype.open = function () {
+//         var args = slice.call( arguments );
+//         var targetOrigin = /^https?:\/\/([^\/]+)/i.exec( args[1] );
+//         if ( targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+//             targetOrigin[1] !== cors_api_host ) {
+//             args[1] = cors_api_url + args[1];
+//         }
+//         return open.apply( this, args );
+//     };
+// } )();
+// fetch( baseUrl )
+//     .then( response => response.text() )
+//     .then( contents => console.log( contents ) )
+//     .catch( () => console.log( "Can’t access " + baseUrl + " response. Blocked by browser?" ) )
 
 mutid.forEach( mutt => mutt.addEventListener( "click", pihtas ) );

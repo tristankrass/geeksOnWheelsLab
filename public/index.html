@@ -45,34 +45,15 @@
     <h1 id="bigOne" style="margin-top: 25rem">Olulised lingid</h1>
     <ul>
         <li><a target="_blank" href="https://repl.it/languages/python_turtle">Kilpkonn</a></li>
-        <li><a target="_blank" href="https://codepen.io/tk23tk/pen/zbemMJ">Teeme mängu</a></li>
+        <li><a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfZjxYs3ZToU-54Tp-Ug-ppl0yKPsqn7DNF1Yvlohmk3TQc3Q/viewform">Tagasiside</a>
+        </li>
+
+        <li><a target="_blank" href="https://codepen.io/tk23tk/pen/zbemMJ">Codepen</a></li>
     </ul>
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-<script>
-    var config = {
-        apiKey: "AIzaSyAra5JTZjA1sQbv8MggG-YKDGs1omBu_q8",
-        authDomain: "whac-a-mole-677b1.firebaseapp.com",
-        databaseURL: "https://whac-a-mole-677b1.firebaseio.com",
-        projectId: "whac-a-mole-677b1",
-        storageBucket: "",
-        messagingSenderId: "466345653198"
-    };
-    firebase.initializeApp( config );
 
-    var biOne = document.getElementById( 'bigOne' );
-    var dbRef = firebase.database().ref().child( 'text' );
-    dbRef.on( 'value', snap => biOne.innerText = snap.val() );
-    function writeUserData( userId, name, email, imageUrl ) {
-        firebase.database().ref( 'users/' + userId ).set( {
-            username: name,
-            email: email,
-            profile_picture: imageUrl
-        } );
-    }
-
-    writeUserData( 123, "Tristan0", "sakjfajdsfojfsoa" )
-</script>
 <script src="main.js"></script>
 
 </html>
