@@ -73,7 +73,7 @@ function pihtas( e ) {
 
     edetabel.textContent = skoor;
 }
-const proxyurl = "https://salty-headland-41998.herokuapp.com/";
+// const proxyurl = "https://salty-headland-41998.herokuapp.com/";
 
 // const baseUrl = 'https://whac-a-mole-677b1.firebaseio.com/usernam';
 // ( function () {

@@ -48,7 +48,8 @@ h1 {
 
 .auk:after {
   display: block;
-  background: url('https://svgshare.com/i/BCM.svg') bottom center no-repeat;
+  /* background: url('https://svgshare.com/i/BCM.svg') bottom center no-repeat; */
+  background: url('dirt.svg') bottom center no-repeat;
   background-size: contain;
   content: '';
   width: 100%;
@@ -59,7 +60,8 @@ h1 {
 }
 
 .mutt {
-  background: url('https://svgshare.com/i/8iE.svg') bottom center no-repeat;
+  /* background: url('https://svgshare.com/i/8iE.svg') bottom center no-repeat; */
+  background: url('mole.svg') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
@@ -71,7 +73,6 @@ h1 {
 .auk.piilub .mutt {
   top: 0;
 }
-
 
 
 .nupp {
@@ -108,12 +109,22 @@ li{
   font-size: 4rem;
   text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+}
 li a {
   text-decoration: none;
   color: yellow;
   cursor: pointer;
 }
+.class{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 li a:hover {
   color: blueviolet;
+  transform: rotate(1080deg);
 }
