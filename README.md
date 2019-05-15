@@ -1,6 +1,7 @@
 # 🧪Programmeerimislabor geeksOnWheels 🧪
 
 ---
+## Kõik vajalik on olemas sammal.me lehel
 
 1. Tänase 45 minutiga tutvustame ühte enim kasutatud programmeerimiskeelt - 🐍Python.
 2. Proovime valmis saada mängu.
