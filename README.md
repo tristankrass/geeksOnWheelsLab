@@ -12,4 +12,8 @@
 ---
 # Starter kood on [siin](https://repl.it/@Tristan23/geeksonwheelsstarter)
 
+### Kes on varem progenud võivad projekti proovida teha ka iseseisvalt
+
+[Kõik vajalik on olemas siin](https://codeclubprojects.org/en-GB/python/turtle-race/)
+
 ## NB! Kui midagi peaks arusaamatuks jääma, siis küsi julgesti!
