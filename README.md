@@ -9,5 +9,6 @@
 
 
 ---
+# Starter kood on [siin](https://repl.it/@Tristan23/geeksonwheelsstarter)
 
 ## NB! Kui midagi peaks arusaamatuks jääma, siis küsi julgesti!
