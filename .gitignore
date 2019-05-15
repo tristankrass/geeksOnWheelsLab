@@ -3,5 +3,6 @@
 .firebasesc
 /public
 ./firebase
+y
 firestore.rules
 firestore.json
