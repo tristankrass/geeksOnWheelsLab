@@ -1,4 +1,4 @@
-# 🧪Programmeerimislabor geeksOnWhees 🧪
+# 🧪Programmeerimislabor geeksOnWheesls🧪
 
 --- 
 
