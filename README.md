@@ -1,5 +1,5 @@
 # 🧪Programmeerimislabor geeksOnWheels 🧪
-
+![🔥 CI/CD 🔥](https://github.com/tristankrass/geeksOnWheelsLab/workflows/%F0%9F%94%A5%20CI/CD%20%F0%9F%94%A5/badge.svg)
 ---
 ## Kõik vajalik on olemas sammal.me lehel
 
